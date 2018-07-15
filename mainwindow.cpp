@@ -56,11 +56,8 @@ void Checkplaces(QString &b, QString id){
        {
            while(!file.atEnd())
            {
-               //читаем строку
                QString str1 = file.readLine();
-               //Делим строку на слова разделенные пробелом
                QStringList lst2 = str1.split(" ");
-                 // находим элементы строки, которые равны 2(место куплено)
                int k=0;
                for(int i=0;i<20;i++)
                {
@@ -74,8 +71,7 @@ void Checkplaces(QString &b, QString id){
        }
        file.close();
 }
-//Установка изначальных цветов:
-//ui->pushButton->setStyleSheet("background-color:green");
+
 void MainWindow::on_pushButton_clicked()
 {
 
